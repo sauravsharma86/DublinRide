@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.saurav.dublinride.ListMainActivity">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:background="@color/colorPrimary"
+        android:onClick="findJSON"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="Get JSON" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:onClick="passJSON"
+        android:paddingLeft="20dp"
+        android:background="@color/colorPrimary"
+        android:text="Parse JSON"
+
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data Come Here!!!!"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            />
+    </ScrollView>
+
+</LinearLayout>

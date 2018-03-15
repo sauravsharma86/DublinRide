@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/cycle"
+    tools:context="com.example.saurav.dublinride.MenuActivity">
+
+    <Button
+        android:id="@+id/listButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_blue_bright"
+        android:onClick="displayListView"
+        android:text="List view" />
+
+    <Button
+        android:id="@+id/mapButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/listButton"
+        android:layout_alignStart="@+id/listButton"
+        android:layout_below="@+id/listButton"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_blue_bright"
+        android:onClick="displayMapView"
+        android:text="map view" />
+
+    <Button
+        android:id="@+id/aboutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mapButton"
+        android:layout_alignStart="@+id/mapButton"
+        android:layout_below="@+id/mapButton"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="250dp"
+        android:background="@android:color/holo_blue_bright"
+        android:text="about"
+        android:onClick="displayAboutView"/>
+
+</LinearLayout>
